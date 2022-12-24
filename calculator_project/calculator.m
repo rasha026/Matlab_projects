@@ -288,8 +288,10 @@ op1 = str2double(regexp(op1,'\d*[\.]?\d*','match'));
 op2 = str2double(regexp(op2,'\d*[\.]?\d*','match'));
 if isequal(op1,'')
     set(handles.error2,'string','Missing X Axis');
+    set(handles.result2, 'String', '');
 elseif isequal(op2,'')
     set(handles.error2,'string','Missing y  Axis');
+    set(handles.result2, 'String', '');
 else
 
     switch arith_operator
